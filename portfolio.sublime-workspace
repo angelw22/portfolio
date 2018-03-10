@@ -1,0 +1,221 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"hover",
+				"hoverPrecise"
+			],
+			[
+				"paddni",
+				"padding-left"
+			],
+			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"a",
+				"a"
+			],
+			[
+				"getEleme",
+				"getElementsByClassName"
+			],
+			[
+				"w3-padding",
+				"w3-padding-64"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/angel/Desktop/NM2207 /Assignment 2 /end2.html",
+		"/Users/angel/Desktop/NM2207 /Assignment 2 /end1.html",
+		"/Users/angel/Desktop/NM2207 /Assignment 2 /index.html",
+		"/Users/angel/Desktop/NM2207 /Assignment 2 /css/appstyle.css",
+		"/Users/angel/Desktop/NM2207 /Assignment 1/index.html",
+		"/Users/angel/Desktop/NM2207 /Assignment 1/end2.html",
+		"/Users/angel/Desktop/NM2207 /Assignment 1/end1.html",
+		"/Users/angel/Desktop/NM2207 /Assignment 1/main.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/portfolio/resume.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/portfolio/jquery.mThumbnailScroller.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/portfolio/jquery.mThumbnailScroller.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/portfolio/portfolio.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/portfolio/example.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/portfolio/test.html",
+		"/Users/angel/Desktop/scroll.css",
+		"/Users/angel/Desktop/scroll.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/portfolio/dynamicinfo.json",
+		"/Users/angel/Desktop/portfolio/jquery.mThumbnailScroller.js",
+		"/Users/angel/Desktop/iphone media/FullSizeRender 3.jpg",
+		"/Users/angel/Desktop/portfolio.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/acp/data/experiments_mod_final.json",
+		"/Users/angel/Documents/GitHub/acp/data/experiments_mod_final.json",
+		"/Users/angel/Desktop/CS4249/Angel Wong A0143612R/data/experiments_mod.json",
+		"/Users/angel/Downloads/Design.json",
+		"/Users/angel/Downloads/Arrangement.json"
+	],
+	"find":
+	{
+		"height": 40.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "portfolio.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"/Applications/XAMPP/xamppfiles/htdocs/portfolio/resume.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

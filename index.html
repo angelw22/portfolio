@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+  <title>Angel Wong</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link href="/portfolio/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+
+
+    <link href="https://fonts.googleapis.com/css?family=Barlow:400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/portfolio/jquery.mThumbnailScroller.css">
+    <link rel="stylesheet" type="text/css" href="/portfolio/resume.css">
+    
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script src="jquery.mThumbnailScroller.min.js"></script>
+
+
+    <!-- aframe --> 
+
+    <script src="//aframe.io/releases/0.5.0/aframe.min.js"></script> 
+    <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v3.7.0/dist/aframe-extras.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/4.4.1/d3.min.js"></script> 
+    <script src="//cdn.rawgit.com/zcanter/aframe-scatterplot/master/dist/a-scatterplot.min.js"></script>
+
+
+
+    <script>
+      function uiData(info) {
+        var name = ["OneService MyNeighbourhood Redesign", "Living Chapters: Sungei Road Market ", "Data visualization for Dengue cases", "WebVR data visualization"];
+        
+        var descriptions = ["The module was a collaboration with the government's OneService platform, which had a subsection MyNeighbourhood, for Singaporeans to find out information about their neighbourhood. We analysed the website they had, and created personas for their target users. We then did interviews with people who fell in the target demographic, and found out what kinds of information they actually wanted to know about their neighbourhood. <br><br> In redesigning the website, we streamlined these taskflows with maximised efficiency and effectiveness/usability, and iterated to this final product. Using tabs, we branched the website into two main goals/task flows: events and news. We added the new social element of community events to bring out the true meaning of a neighbourhood for our target users, which is community involvement.", 
+        "This module was about recreating a sense of a place. We learnt what comprised a sense of place, and explored technologies which can help recreate this. We were tasked to recreate the sense of place for the abolished Sungei Road Flea Market. Understanding the practical limitations of the resources we had - if we really wanted to fully recreate SRM in the form of a simulacrum we could have just decided on a virtual reality experience, but this is difficult to accurately represent - we decided that an app would be sufficiently effective to convey the narratives which made up Sungei Road Market. <br><br> We designed this app to allow people to roam freely around a stipulated area around Sungei Road Market, and to provide them with stories as they venture in the space and discover various artefacts which provide meaning to Sungei Road Market and its inhabitants.", 
+        "This was done for a data visualization module, which was about designing for a way to best view different dimensions of data, in ways which are easier to comprehend visually than traditional graphs. It involved the team ploughing through the government's public database and searching for trends between completely distinct datasets.", 
+        "You can use a google cardboard. Else, on desktop, click in the window and move your cursor to look around. Use the W and S keys to move forward or backward in the direction you are facing. <br><br> This was a recent venture into WebVR, using HTML and Javascript, and plugins from various sources. The purpose of this was to aid the teaching and learning of big data. This was meant to solve the limitations of 2D mediums (incomprehensible with more dimensions) through helping the students obtain the meaning of the data through physicality. This means that they are instinctively able to understand how the data points relate to one another through a subconscious understanding of how the space is constructed.<br><br>I learnt to code this by myself, and found the datasets and plugged it in accordingly. Source: <a href='https://angelw22.github.io/CS3240/'>https://angelw22.github.io/CS3240/</a>"];
+        var x  = descriptions[info - 1];
+        var y = name[info -1];
+        document.getElementById("nameUI").innerHTML = y;
+        document.getElementById("descrUI").innerHTML = x;
+       
+      }
+
+      function graphicData(info) {
+        var name = ["Design Fiction Magazine Page", "Ultimate Food Trail '17 Poster", "Theatre production PR Magazine", "Deeparaya '17 Poster ", "Yellow Ribbon Project Brochure", "Kubs Logo"];
+        var descriptions = ["This was a module which required us to construct a 'world' of our own, and make it as convincing as possible. My partner and I decided on a post-apocalyptic world, bordering on the line between dystopian and utopian. The product advertised is one created by a ominous (poster was made to portray the 'pure' image of the organisation) biotechnological company, which claims to use special worms and mushrooms to convert waste into food. (We actually made a physical, automated prototype using arduinos!)", "Ultimate Food Trail is an annual event oragnised by NUS. In 2017, we collaborated with SMU for the event. I made this poster for internal (college) dissemination.", "Compiled for a theatre studies module, we had to plan a theatre production. I arranged and designed the elements comprising the information book, which was meant for PR purposes.", "This poster was done for a Deeparaya event organised by the Youth Chapter community in my neighbourhood, which I am part of. The poster was printed and placed in billboards in the HDBs of Taman Jurong.", "This brochure aimed to evoke empathy from the audience, for ex-convicts. The front of the brochure features a diecut, which when folded, has the prison grilles covering the child the tattoo-ed man is carrying. The brochure challenges the prejudice and preconceived notions of the reader, and attempts to convince the reader using pathos and logos.", "This is a logo I made for a Virtual Reality application project I am working on. It is an environment which develops the programmatic thinking of children by getting them to solve challenges using object-based programming in virtual reality."];
+        var x = descriptions[info - 1];
+        var y = name[info - 1];
+        document.getElementById("nameGraphic").innerHTML = y;
+        document.getElementById("descrGraphic").innerHTML = x
+      }
+
+      function filmData(info) {
+        var information = ["One of the earlier films I did during college. A short film for a Singapore Studies module. Expresses the loss of the old with the growth of Singapore. The film focuses on themes like topocide and nostalgia. <br> I was in charge of the in the storyboarding and direction of this film.", "Being part of the organising committee then, I was tasked to the department that handled the 'storyline' of the camp. This teaser video served to entice the incoming freshmen. I single-handedly storyboarded, directed, filmed and edited this video.", "Being part of the organising committee then, I was tasked to the department that handled the 'storyline' of the camp. This was the video at the end where we revealed the plot. As with the teaser, I storyboarded, directed, filmed and edited it on my own. <br> Due to some error, the sound does not play for now.", "A sneak peak of a project I'm working on.", "A short clip showing the story world of a module I took. It illustrates the biotech organisation, Morel that has ominous means of striving for a 'sustainable' world where trash converts to food."]
+        var name = ["SEEK", "Psychology Camp '15 Teaser", "Psychology Camp '15 Revelation Video", "Frog Acoustics, a documentary", "Design Fiction"]
+        var x = information[info - 1];
+        var y = name[info - 1];
+        document.getElementById("filmInfo").innerHTML = x;
+        document.getElementById("filmName").innerHTML = y;
+      }
+    </script>
+    
+    <style>
+      body {font-family: "Barlow", sans-serif;}
+      h1,h2,h3,h4,h5,h6 {
+          font-family: "Barlow", sans-serif;
+          letter-spacing: 5px;
+          color: #d7b6c6;
+      }
+      h6 {
+        letter-spacing: 2px;
+        color: #8DA7A4;
+      }
+
+      h6 > b {
+        color: #d7b6c6;
+      }
+      p {
+        letter-spacing : 1px;
+        color: gray;
+      }
+
+
+      label {
+        display: inline-block;
+        width: 5em;
+      }
+
+      .voverlay,
+      .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 50%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: rgba(0, 140, 186, 0.4);
+      }
+      
+      ul.mTSContainer > li:hover .overlay {
+        opacity: 1;
+      }
+
+      .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+      }
+
+      .mTSThumbContainer:hover {
+        opacity: 1;
+      }
+
+      .voverlay {
+        opacity: 0;
+        vertical-align: middle;
+        padding: 165px;
+        position: relative;
+        margin-top: -455px;
+      }
+
+      .overlay {
+        opacity: 0;
+        vertical-align: middle;
+        padding: 1px;
+        position: relative;
+        margin-top: -512px;
+      }
+      .overlay:hover {
+        opacity: 1;
+      }
+      .overlay-text {
+          height: 508px;
+          margin: 0 auto;
+          width: 508px;
+          color: black;
+      }
+
+      .mTSButtonRight {
+        background: url(images/next.svg);
+        background-size: 28px;
+      
+      }
+
+      .mTSButtonLeft {
+        background: url(images/back.svg);
+        background-size: 28px;
+
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px";>
+        <a href="#home" class="w3-bar-item w3-button pink-btn" style="font-size: 20px; color: gray; border-style: solid; border-color: lightgray; border-radius: 0.5px">ANGEL WONG</a>
+        <!-- Right-sided navbar links. Hide them on small screens -->
+        <div class="w3-right w3-hide-small">
+          <a href="#about" class="w3-bar-item w3-button pink-btn">ABOUT ME</a>
+          <a href="#uiux" class="w3-bar-item w3-button port-btn">UI/UX DESIGN</a>
+          <a href="#graphic" class="w3-bar-item w3-button port-btn">GRAPHIC DESIGN</a>
+          <a href="#film" class="w3-bar-item w3-button port-btn">FILM</a>
+          <a href="#contact" class="w3-bar-item w3-button pink-btn">CONTACT</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+      <img class="w3-image" src="images/bgimgedit.png" alt="image" height="400">
+
+    </header>
+      
+      <!-- Page content -->
+      <div class="w3-content" style="max-width:1100px">
+        <!-- About Section -->
+        <div class="w3-row w3-padding-64" id="about">
+          <div class="w3-col w3-padding-large">
+            <h1 class="w3-center">About Me</h1>
+            <br>
+              <h5 class="w3-center">23. NUS Undergraduate. <br> Faculty of Arts and Social Sciences <br></h5> <h6 class="w3-center"><b>C</b>ommunications and <b>N</b>ew <b>M</b>edia Major <br> <b>I</b>nteractive <b>M</b>edia <b>D</b>evelopment Minor</h6><br><br>
+              <p class="w3-large w3-center">Welcome to my portfolio website! <br><br> In this website, I have a number of collaterals I have done for projects. <br><br>I mainly dabble in UI/UX Design, Graphic Design and Film. The UI/UX designs are based on theories learnt from college, whereas graphic design and film skills are self-taught. I also do front-end web design, and I learnt HTML and javascript by myself to build this website from scratch.</p><br> <h6 class="w3-center">Always much to improve, and always a work in progress.</h6>
+
+
+          </div>
+        </div>
+      </div>
+
+
+    <hr>
+      <!-- UIUX Section -->
+      <div class="w3-container w3-row w3-padding-64" id="uiux">
+        <div class="w3-col">
+          <h1 class="w3-center">UI/UX Design</h1>
+            <br>
+            <p class ="w3-large w3-padding-large"> These designs may not look like much, but they reflect the thorough process of learning usability design, of which is not necessarily about aesthetics. We thoroughly analyse the target users (with research, of course), break down their specific user flows and design an experience using design, usability principles. <br><br></p>
+
+            <div class ="w3-large w3-padding-large">
+              <h6 id="nameUI">Hover over the image(s) to read more.</h6>
+              <p id="descrUI"></p> <br><br>
+            </div>
+
+            <div id="scroller" class="mTSWrapper">
+              <div class="mTSContainer">
+                <ul>
+                  <li>
+                    <div onmouseover="uiData (1)">
+                      <img class="mnbd w3-animate-opacity" src="images/mnbdmain.png">
+                      <img class="mnbd w3-animate-opacity" src="images/mnbd1.png">
+                      <img class="mnbd w3-animate-opacity" src="images/mnbd2.png">
+                    </div>        
+                    <!-- develop in future 
+                    <div class="overlay">
+                      <div class="overlay-text">
+                        <p>Redesign of One Service's My Neighbourhood webpage.</p>
+                        <a onclick="uiData(1); return false;" href="#" id="1"></a>
+                      </div>
+                    </div>
+                  -->
+                  </li>
+                  <li> 
+                    <div style="padding-left: 50px; padding-right: 50px" onmouseover="uiData(2)">
+                      <img class="LC w3-animate-opacity" src="images/main.png"/>
+                      <img class="LC w3-animate-opacity" src="images/LC2.png"/>
+                      <img class="LC w3-animate-opacity" src="images/LC3.png"/>
+                      <img class="LC w3-animate-opacity" src="images/LC4.png"/>
+                      <img class="LC w3-animate-opacity" src="images/LC5.png"
+                    </div>
+                    <!-- develop in future 
+                    <div class="overlay">
+                      <div class="overlay-text">
+                        hello there
+                        <a onclick="uiData(2); return false;" href="#" id="2"></a>
+                      </div>
+                    </div>
+                  -->
+                  </li>
+                  <li>
+                    <div onmouseover="uiData(3)"> 
+                      <img class="dengue w3-animate-opacity" src="images/dengue1.png" />
+                      <img class="dengue w3-animate-opacity" src="images/dengue2.png" />
+                      <img class="dengue w3-animate-opacity" src="images/dengue3.png" />
+                    </div>
+                    <!-- develop in future 
+
+                    <div class="overlay">
+                      <div class="overlay-text">
+                        <a onclick="uiData(3); return false;" href="#" id="3"></a>
+                      </div>
+                    </div>
+                  -->
+                  </li>
+                  <li>
+                    <div onmouseover="uiData(4)">
+                      <iframe sandbox="allow-popups allow-pointer-lock allow-scripts allow-forms allow-same-origin" src="https://angelw22.github.io/CS3240/" marginwidth="0" marginheight="0" style="height:450px;width:550px" scrolling="no"></iframe>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <hr>
+
+      <!-- Graphic Design Section -->
+      <div class="w3-container w3-padding-64" id="graphic">
+        <div class ="w3-col">
+          <h1 class="w3-center">Graphic Design</h1>
+          <br>
+          <div class ="w3-large w3-padding-large">
+            <h6 id="nameGraphic">Hover over image(s) to read more.</h6>
+            <p id="descrGraphic"></p> <br><br>
+          </div>          
+          <div id="scroller2" class="mTSWrapper">
+            <div class="mTSContainer">
+              <ul>
+                <li>
+                  <div onmouseover="graphicData(6)">
+                    <img style="padding: 100px" src="images/logo.png"/>
+                </li>
+                <li>
+                  <div onmouseover="graphicData(1)">
+                    <img class="desfic w3-animate-opacity" src="images/page1.png" >
+                    <img class="desfic w3-animate-opacity" src="images/page2.png" >
+                  </div>  
+                  <!-- develop in future 
+                  <div class="overlay">
+                    <div class="overlay-text">
+                      <a onclick="graphicData(1); return false;" href="#" id="1"></a>
+                    </div>
+                  </div>
+                -->
+                </li>
+                <li> 
+                  <div onmouseover="graphicData(2)">
+                    <img src="images/uft.png" style ="padding-left:50px; padding-right:50px">
+                  <!-- develop in future 
+                  <div class="overlay">
+                    <div class="overlay-text">
+                      <a onclick="graphicData(2); return false;" href="#" id="2"></a>
+                    </div>
+                  </div>
+                -->
+                  </div>
+                </li>
+                <li>
+                  <div onmouseover="graphicData(3)">
+                    <img class="lovesong w3-animate-opacity" src="images/lovesong.png" >
+                    <img class="lovesong w3-animate-opacity" src="images/t2.png" >
+                    <img class="lovesong w3-animate-opacity" src="images/t1.png" >
+                    <img class="lovesong w3-animate-opacity" src="images/playbill.png" >
+                  </div>
+                  <!-- develop in future 
+                  <div class="overlay">
+                    <div class="overlay-text">
+                      <a onclick="graphicData(3); return false;" href="#" id="3"></a>
+                    </div>
+                  </div>
+                -->
+                </li>
+                <li>
+                  <div onmouseover="graphicData(4)">
+                  <img src="images/deeparaya.png" style = "padding-left: 50px; padding-right: 50px" />
+                  <!-- develop in future 
+                  <div class="overlay">
+                    <div class="overlay-text">
+                      <a onclick="graphicData(4); return false;" href="#" id="4"></a>
+                    </div>
+                  </div>
+                -->
+                  </div>
+                </li>
+                <li>
+                  <div onmouseover="graphicData(5)">
+                    <img src="images/brochure.png" />
+                  <!-- develop in future 
+                  <div class="overlay">
+                    <div class="overlay-text">
+                      <a onclick="graphicData(5); return false;" href="#" id="5"></a>
+                    </div>
+                  </div>
+                -->
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <p class ="w3-large w3-padding-large" id = "descrGraphic"> <!-- put description here --> </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Film Section -->
+      <div class="w3-container w3-padding-64" id="film">
+        <div class ="w3-col">
+          <h1 class="w3-center">Film</h1>
+          <br>
+            <div class ="w3-large w3-padding-large">
+              <h6 id="filmName">Hover over video to read more.</h6>
+              <p id="filmInfo"></p>
+            </div>
+            <div id="scroller3" class="mTSWrapper">
+              <div class="mTSContainer"> 
+              <div>
+                <ul>
+                  <br><br>
+                  <li>  
+                    <div onmouseover="filmData(4)">
+                      <iframe src="https://player.vimeo.com/video/259280279" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                  </li>
+                  <li>
+                    <div onmouseover="filmData(5)">
+                      <iframe width="800" height="450" src="https://www.youtube.com/embed/w8dYR35SaEE" frameborder="0" ></iframe>
+                    </div>
+                  </li>
+                  <li>
+                    <div onmouseover="filmData(1)">
+                      <iframe src="https://player.vimeo.com/video/258642427" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                  </li>
+                  <li>  
+                    <div onmouseover="filmData(2)">
+                      <iframe src="https://player.vimeo.com/video/259280303" width="800" height="450" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                  </li>
+                  <li>  
+                    <div onmouseover="filmData(3)">
+                      <iframe src="https://player.vimeo.com/video/259280287" width="800" height="450" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                  </li> 
+                </ul>
+              </div>        
+          </div>
+        </div>
+      </div> 
+    </div>
+
+
+
+      <!-- Contact Section -->
+      <div class="w3-container w3-padding-64" id="contact">
+        <h1>Contact</h1>
+        <br>
+          <p class= "w3-large" style="color: #8DA7A4">
+            <b>angel.wong@u.nus.edu</b><br>
+            +65 9147 0663
+          </p>
+          <br>
+          <p>Feel free to drop a quick message to my email here:</p>
+          <form action="mailto:angel.wong@u.nus.edu" method="post" enctype="text/plain">
+            <p>
+              <input class="w3-input w3-padding-16" type="text" placeholder="Name">
+            </p>
+            <p>
+              <input class="w3-input w3-padding-16" type="textarea" placeholder="Message" required name=" ">
+            </p>
+            <br>
+            <p>
+              <button class="w3-button pink-btn" type="submit">SEND</button>
+            </p>
+          </form>
+        </div>
+
+
+                <!-- End page content -->
+     
+    <!-- Footer -->
+    <footer class="w3-center w3-light-grey w3-padding-32">
+      <p>Powered by 
+        <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a>
+      </p>
+    </footer>
+   
+    <script src="jquery.mThumbnailScroller.js"></script>
+
+
+<!--
+    <script>
+    jQuery.noConflict();
+    $(document).ready(function () {
+        $("#scroller").mThumbnailScroller( {
+
+        });
+
+        $("#scroller2").mThumbnailScroller( {
+            scrollerType:"hoverPrecise",
+            scrollerOrientation:"horizontal",
+            scrollSpeed:2,
+            scrollEasing:"easeOutCirc",
+            scrollEasingAmount:600,
+            acceleration:4,
+            scrollSpeed:800,
+            noScrollCenterSpace:10,
+            autoScrolling:0,
+            autoScrollingSpeed:2000,
+            autoScrollingEasing:"easeInOutQuad",
+            autoScrollingDelay:500,
+            axis: "x",
+        });
+
+        $("#scroller3").mThumbnailScroller( {
+            scrollerType:"hoverPrecise",
+            scrollerOrientation:"horizontal",
+            scrollSpeed:2,
+            scrollEasing:"easeOutCirc",
+            scrollEasingAmount:600,
+            acceleration:4,
+            scrollSpeed:800,
+            noScrollCenterSpace:10,
+            autoScrolling:0,
+            autoScrollingSpeed:2000,
+            autoScrollingEasing:"easeInOutQuad",
+            autoScrollingDelay:500,
+            axis: "x",
+        });
+      }_
+    })(jQuery);
+    </script>
+-->
+
+
+
+    <script>
+      var myIndex = 0;      
+      carousel();
+      function carousel() {
+          var i;
+          var x = document.getElementsByClassName("desfic");
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 5000)
+      }
+
+      var myIndex2 = 0
+      carousel2();
+      function carousel2() {
+
+          var b;
+          var y = document.getElementsByClassName("lovesong");
+          for (b = 0; b < y.length; b++) {
+             y[b].style.display = "none";
+          }
+          myIndex2++;
+          if (myIndex2 > y.length) {myIndex2 = 1}    
+          y[myIndex2-1].style.display = "block";
+          setTimeout(carousel2, 5000); // Change image every 2 seconds
+      }
+
+      var myIndex3 = 0 
+      carousel3();
+      function carousel3() {
+        var c;
+        var z = document.getElementsByClassName("LC")
+        for (c = 0; c < z.length; c++) {
+          z[c].style.display = "none";
+        }
+        myIndex3++;
+        if (myIndex3 > z.length) {myIndex3 = 1}
+        z[myIndex3-1].style.display = "block";
+        setTimeout(carousel3, 5000);
+      }
+
+      var myIndex4 = 0 
+      carousel4();
+      function carousel4() {
+        var d;
+        var a = document.getElementsByClassName("dengue")
+        for (d = 0; d < a.length; d++) {
+          a[d].style.display = "none";
+        }
+        myIndex4++;
+        if (myIndex4 > a.length) {myIndex4 = 1}
+        a[myIndex4-1].style.display = "block";
+        setTimeout(carousel4, 4000);
+      }
+
+      var myIndex5 = 0 
+      carousel5();
+      function carousel5() {
+        var e;
+        var b = document.getElementsByClassName("mnbd")
+        for (e = 0; e < b.length; e++) {
+          b[e].style.display = "none";
+        }
+        myIndex5++;
+        if (myIndex5 > b.length) {myIndex5 = 1}
+        b[myIndex5-1].style.display = "block";
+        setTimeout(carousel5, 5000);
+      }
+
+    </script>
+  
+    <script>
+            $(document).ready(function () {
+              $("#scroller").mThumbnailScroller({
+                axis: "x",
+                
+              });
+            });
+
+            $(document).ready(function () {
+                $("#scroller2").mThumbnailScroller({
+                  axis: "x"
+                })
+            });
+
+            $(document).ready(function () {
+                $("#scroller3").mThumbnailScroller({
+                  axis: "x",
+                  type: "click-25"
+                });
+            });
+    </script>
+
+  </body>
+</html>
