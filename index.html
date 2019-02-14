@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
@@ -32,17 +32,20 @@
 
     <script>
       function uiData(info) {
-        var name = ["OneService MyNeighbourhood Redesign", "Living Chapters: Sungei Road Market ", "Data visualization for Dengue cases", "WebVR data visualization"];
+        var name = ["OpenCerts by GovTech","MCCY Grants Portal by GovTech","The Codette Project Hackathon - Best Use of Design Principles", "WebVR data visualization","OneService MyNeighbourhood Redesign", "Living Chapters: Sungei Road Market ", "Data visualization for Dengue cases"];
         
-        var descriptions = ["The module was a collaboration with the government's OneService platform, which had a subsection MyNeighbourhood, for Singaporeans to find out information about their neighbourhood. We analysed the website they had, and created personas for their target users. We then did interviews with people who fell in the target demographic, and found out what kinds of information they actually wanted to know about their neighbourhood. <br><br> In redesigning the website, we streamlined these taskflows with maximised efficiency and effectiveness/usability, and iterated to this final product. Using tabs, we branched the website into two main goals/task flows: events and news. We added the new social element of community events to bring out the true meaning of a neighbourhood for our target users, which is community involvement.", 
+        var descriptions = [
+        "I joined this project on my internship and on an extended contract with GovTech, where I worked as the primary UX Designer and Front-End Developer. From a skeleton of a site, I designed and implemented the interface and contents of their site. <br> This was a new concept for certificate viewing and sharing, so design decisions had grounded in user research with students and HR personnel to find out their existing perceptions of the process. <br> The main challenge in this project was trying to translate something technical and foreign into an experience that is easy to use and understand. On top of interface design, I sought mentorship from the UX writers in GovTech and to also create copy focuses on telling the users what they need to know - free of technical jargon. <br><br> View the site <a href='https://opencerts.io/'>here</a>",
+        "This was my main project during my stint with GovTech, and this project was where I learnt most of my front-end development skills, while interacting with the dev team. I was fortunate to be given plenty of opportunities to work on the things I learnt, conducting user research, processes of implementing code, designing wireframes and more. The key contributions I made to the team were the design of the help page from scratch, and collaborations with an external team to implement the page. Another key contribution of mine was to the exploration of animated icons to create an aesthetic experience which delighted users.",
+        "I participated in a Hackathon and created this prototype for the theme of 'Tech for Good'. The app aims to solve wastage of food by letting people share if they have access buffet food that cannot be finished. Users can then be 'food heroes' and collect these food items to save them from being thrown away. <br><br> View the prototype <a href='https://invis.io/XBMYM89CPVU#/308766035_Landing_Page'>here</a>",
+        "You can use a google cardboard. Else, on desktop, click in the window and move your cursor to look around. Use the W and S keys to move forward or backward in the direction you are facing. <br><br> This was a recent venture into WebVR, using HTML and Javascript, and plugins from various sources. The purpose of this was to aid the teaching and learning of big data. This was meant to solve the limitations of 2D mediums (incomprehensible with more dimensions) through helping the students obtain the meaning of the data through physicality. This means that they are instinctively able to understand how the data points relate to one another through a subconscious understanding of how the space is constructed.<br><br>I learnt to code this by myself, and found the datasets and plugged it in accordingly. Source: <a href='https://angelw22.github.io/CS3240/'>https://angelw22.github.io/CS3240/</a>",
+        "The module was a collaboration with the government's OneService platform, which had a subsection MyNeighbourhood, for Singaporeans to find out information about their neighbourhood. We analysed the website they had, and created personas for their target users. We then did interviews with people who fell in the target demographic, and found out what kinds of information they actually wanted to know about their neighbourhood. <br><br> In redesigning the website, we streamlined these taskflows with maximised efficiency and effectiveness/usability, and iterated to this final product. Using tabs, we branched the website into two main goals/task flows: events and news. We added the new social element of community events to bring out the true meaning of a neighbourhood for our target users, which is community involvement.", 
         "This module was about recreating a sense of a place. We learnt what comprised a sense of place, and explored technologies which can help recreate this. We were tasked to recreate the sense of place for the abolished Sungei Road Flea Market. Understanding the practical limitations of the resources we had - if we really wanted to fully recreate SRM in the form of a simulacrum we could have just decided on a virtual reality experience, but this is difficult to accurately represent - we decided that an app would be sufficiently effective to convey the narratives which made up Sungei Road Market. <br><br> We designed this app to allow people to roam freely around a stipulated area around Sungei Road Market, and to provide them with stories as they venture in the space and discover various artefacts which provide meaning to Sungei Road Market and its inhabitants.", 
-        "This was done for a data visualization module, which was about designing for a way to best view different dimensions of data, in ways which are easier to comprehend visually than traditional graphs. It involved the team ploughing through the government's public database and searching for trends between completely distinct datasets.", 
-        "You can use a google cardboard. Else, on desktop, click in the window and move your cursor to look around. Use the W and S keys to move forward or backward in the direction you are facing. <br><br> This was a recent venture into WebVR, using HTML and Javascript, and plugins from various sources. The purpose of this was to aid the teaching and learning of big data. This was meant to solve the limitations of 2D mediums (incomprehensible with more dimensions) through helping the students obtain the meaning of the data through physicality. This means that they are instinctively able to understand how the data points relate to one another through a subconscious understanding of how the space is constructed.<br><br>I learnt to code this by myself, and found the datasets and plugged it in accordingly. Source: <a href='https://angelw22.github.io/CS3240/'>https://angelw22.github.io/CS3240/</a>"];
+        ];
         var x  = descriptions[info - 1];
         var y = name[info -1];
         document.getElementById("nameUI").innerHTML = y;
         document.getElementById("descrUI").innerHTML = x;
-       
       }
 
       function graphicData(info) {
@@ -65,12 +68,19 @@
     </script>
     
     <style>
-      body {font-family: "Barlow", sans-serif;}
+      body {font-family: "Barlow", sans-serif; background-color: #fffefc}
       h1,h2,h3,h4,h5,h6 {
           font-family: "Barlow", sans-serif;
           letter-spacing: 5px;
           color: #d7b6c6;
       }
+
+      #nameUI, #nameGraphic, #filmName {
+        letter-spacing: 2px;
+        color: #8DA7A4;
+        padding-bottom: 20px
+      }
+
       h6 {
         letter-spacing: 2px;
         color: #8DA7A4;
@@ -167,7 +177,7 @@
     <!-- Navbar (sit on top) -->
     <div class="w3-top">
       <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px";>
-        <a href="#home" class="w3-bar-item w3-button pink-btn" style="font-size: 20px; color: gray; border-style: solid; border-color: lightgray; border-radius: 0.5px">ANGEL WONG</a>
+        <a href="#home" class="w3-bar-item w3-button" style="font-size: 20px; color: gray;">ANGEL WONG</a>
         <!-- Right-sided navbar links. Hide them on small screens -->
         <div class="w3-right w3-hide-small">
           <a href="#about" class="w3-bar-item w3-button pink-btn">ABOUT ME</a>
@@ -192,10 +202,10 @@
           <div class="w3-col w3-padding-large">
             <h1 class="w3-center">About Me</h1>
             <br>
-              <h5 class="w3-center">23. NUS Undergraduate. <br> Faculty of Arts and Social Sciences <br></h5> <h6 class="w3-center"><b>C</b>ommunications and <b>N</b>ew <b>M</b>edia Major <br> <b>I</b>nteractive <b>M</b>edia <b>D</b>evelopment Minor</h6><br><br>
-              <p class="w3-large w3-center">Welcome to my portfolio website! <br><br> In this website, I have a number of collaterals I have done for projects. <br><br>I mainly dabble in UI/UX Design, Graphic Design and Film. The UI/UX designs are based on theories learnt from college, whereas graphic design and film skills are self-taught. I also do front-end web design, and I learnt HTML and javascript by myself to build this website from scratch.</p><br> <h6 class="w3-center">Always much to improve, and always a work in progress.</h6>
-
-
+            <h5 class="w3-center">23. NUS Undergraduate. <br> Faculty of Arts and Social Sciences <br></h5> <h6 class="w3-center"><b>C</b>ommunications and <b>N</b>ew <b>M</b>edia Major <br> <b>I</b>nteractive <b>M</b>edia <b>D</b>evelopment Minor</h6><br><br>
+            <p class="w3-large w3-center">Welcome to my portfolio website! <br><br> This website showcases some of the work I have done for projects. <br><br>I mainly dabble in UI/UX Design, Graphic Design and Film. The UI/UX designs are based on theories learnt from college and work, whereas graphic design and film skills are self-taught. I also do front-end web design, and I learnt HTML and javascript by myself to build this website from scratch.
+              In 2018, I started picking up front-end development on my UX internship and had experience working with the react.js framework. This site is in the midst of revamp so please bear with me!</p><br> 
+              <!-- <h6 class="w3-center">Always a work in progress!</h6> -->
           </div>
         </div>
       </div>
@@ -207,70 +217,98 @@
         <div class="w3-col">
           <h1 class="w3-center">UI/UX Design</h1>
             <br>
-            <p class ="w3-large w3-padding-large"> These designs may not look like much, but they reflect the thorough process of learning usability design, of which is not necessarily about aesthetics. We thoroughly analyse the target users (with research, of course), break down their specific user flows and design an experience using design, usability principles. <br><br></p>
+            <p class ="w3-large w3-padding-large"> These are some examples of my work from projects I did for work and college. A number of the college projects may not look like much, but we do conduct user research, break down their specific user flows and design an experience using usability principles. <br><br></p>
 
             <div class ="w3-large w3-padding-large">
-              <h6 id="nameUI">Hover over the image(s) to read more.</h6>
-              <p id="descrUI"></p> <br><br>
+              <h3 id="nameUI">Hover over the image(s) to read more below.</h3>
             </div>
 
             <div id="scroller" class="mTSWrapper">
-              <div class="mTSContainer">
-                <ul>
-                  <li>
-                    <div onmouseover="uiData (1)">
-                      <img class="mnbd w3-animate-opacity" src="images/mnbdmain.png">
-                      <img class="mnbd w3-animate-opacity" src="images/mnbd1.png">
-                      <img class="mnbd w3-animate-opacity" src="images/mnbd2.png">
-                    </div>        
-                    <!-- develop in future 
-                    <div class="overlay">
-                      <div class="overlay-text">
-                        <p>Redesign of One Service's My Neighbourhood webpage.</p>
-                        <a onclick="uiData(1); return false;" href="#" id="1"></a>
+                <div class="mTSContainer">
+                  <ul>
+                    <li>
+                        <div onmouseover="uiData (1)">
+                            <img class="opencerts w3-animate-opacity" src="images/opencerts.png">
+                            <img class="opencerts w3-animate-opacity" src="images/opencerts2.png">
+                        </div>
+                    </li>
+                    <li>
+                        <div onmouseover="uiData (2)">
+                            <img class="MGP w3-animate-opacity" src="images/MGP.png">
+                            <img class="MGP w3-animate-opacity" src="images/MGP.gif">
+                        </div>
+                    </li>
+  
+                    <li>
+                        <div onmouseover="uiData (3)">
+                            <img class="codette w3-animate-opacity" src="images/codette1.jpg">
+                            <img class="codette w3-animate-opacity" src="images/codette2.jpg">
+                            <img class="codette w3-animate-opacity" src="images/codette3.png">
+                            <img class="codette w3-animate-opacity" src="images/codette4.jpg">
+                        </div>
+                    </li>
+                    <li>
+                      <div onmouseover="uiData (5)">
+                        <img class="mnbd w3-animate-opacity" src="images/mnbdmain.png">
+                        <img class="mnbd w3-animate-opacity" src="images/mnbd1.png">
+                        <img class="mnbd w3-animate-opacity" src="images/mnbd2.png">
+                      </div>        
+                      <!-- develop in future 
+                      <div class="overlay">
+                        <div class="overlay-text">
+                          <p>Redesign of One Service's My Neighbourhood webpage.</p>
+                          <a onclick="uiData(1); return false;" href="#" id="1"></a>
+                        </div>
                       </div>
-                    </div>
-                  -->
-                  </li>
-                  <li> 
-                    <div style="padding-left: 50px; padding-right: 50px" onmouseover="uiData(2)">
-                      <img class="LC w3-animate-opacity" src="images/main.png"/>
-                      <img class="LC w3-animate-opacity" src="images/LC2.png"/>
-                      <img class="LC w3-animate-opacity" src="images/LC3.png"/>
-                      <img class="LC w3-animate-opacity" src="images/LC4.png"/>
-                      <img class="LC w3-animate-opacity" src="images/LC5.png"
-                    </div>
-                    <!-- develop in future 
-                    <div class="overlay">
-                      <div class="overlay-text">
-                        hello there
-                        <a onclick="uiData(2); return false;" href="#" id="2"></a>
+                    -->
+                    </li>
+                    <li> 
+                      <div style="padding-left: 50px; padding-right: 50px" onmouseover="uiData(6)">
+                        <img class="LC w3-animate-opacity" src="images/main.png"/>
+                        <img class="LC w3-animate-opacity" src="images/LC2.png"/>
+                        <img class="LC w3-animate-opacity" src="images/LC3.png"/>
+                        <img class="LC w3-animate-opacity" src="images/LC4.png"/>
+                        <img class="LC w3-animate-opacity" src="images/LC5.png"/>
                       </div>
-                    </div>
-                  -->
-                  </li>
-                  <li>
-                    <div onmouseover="uiData(3)"> 
-                      <img class="dengue w3-animate-opacity" src="images/dengue1.png" />
-                      <img class="dengue w3-animate-opacity" src="images/dengue2.png" />
-                      <img class="dengue w3-animate-opacity" src="images/dengue3.png" />
-                    </div>
-                    <!-- develop in future 
-
-                    <div class="overlay">
-                      <div class="overlay-text">
-                        <a onclick="uiData(3); return false;" href="#" id="3"></a>
+                      <!-- develop in future 
+                      <div class="overlay">
+                        <div class="overlay-text">
+                          hello there
+                          <a onclick="uiData(2); return false;" href="#" id="2"></a>
+                        </div>
                       </div>
-                    </div>
-                  -->
-                  </li>
-                  <li>
-                    <div onmouseover="uiData(4)">
-                      <iframe sandbox="allow-popups allow-pointer-lock allow-scripts allow-forms allow-same-origin" src="https://angelw22.github.io/CS3240/" marginwidth="0" marginheight="0" style="height:450px;width:550px" scrolling="no"></iframe>
-                    </div>
-                  </li>
-                </ul>
+                    -->
+                    </li>
+  
+                    <!-- Consider removing 
+                    <li>
+                      <div onmouseover="uiData(3)"> 
+                        <img class="dengue w3-animate-opacity" src="images/dengue1.png" />
+                        <img class="dengue w3-animate-opacity" src="images/dengue2.png" />
+                        <img class="dengue w3-animate-opacity" src="images/dengue3.png" />
+                      </div>
+  
+                      <div class="overlay">
+                        <div class="overlay-text">
+                          <a onclick="uiData(3); return false;" href="#" id="3"></a>
+                        </div>
+                      </div>
+                    </li> -->
+                    <li>
+                      <div onmouseover="uiData(4)">
+                        <iframe sandbox="allow-popups allow-pointer-lock allow-scripts allow-forms allow-same-origin" src="https://angelw22.github.io/CS3240/" marginwidth="0" marginheight="0" style="height:450px;width:550px" scrolling="no"></iframe>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
               </div>
+
+
+              <div class ="w3-large w3-padding-large">
+                <br><br>
+                <p id="descrUI"></p> <br><br>
+              </div>
+              
             </div>
             
           </div>
@@ -283,7 +321,7 @@
           <h1 class="w3-center">Graphic Design</h1>
           <br>
           <div class ="w3-large w3-padding-large">
-            <h6 id="nameGraphic">Hover over image(s) to read more.</h6>
+            <h3 id="nameGraphic">Hover over image(s) to read more.</h3>
             <p id="descrGraphic"></p> <br><br>
           </div>          
           <div id="scroller2" class="mTSWrapper">
@@ -308,7 +346,7 @@
                 </li>
                 <li> 
                   <div onmouseover="graphicData(2)">
-                    <img src="images/uft.png" style ="padding-left:50px; padding-right:50px">
+                    <img src="images/uft.png">
                   <!-- develop in future 
                   <div class="overlay">
                     <div class="overlay-text">
@@ -335,7 +373,7 @@
                 </li>
                 <li>
                   <div onmouseover="graphicData(4)">
-                  <img src="images/deeparaya.png" style = "padding-left: 50px; padding-right: 50px" />
+                  <img src="images/deeparaya.png" />
                   <!-- develop in future 
                   <div class="overlay">
                     <div class="overlay-text">
@@ -370,7 +408,7 @@
           <h1 class="w3-center">Film</h1>
           <br>
             <div class ="w3-large w3-padding-large">
-              <h6 id="filmName">Hover over video to read more.</h6>
+              <h3 id="filmName">Hover over video to read more.</h3>
               <p id="filmInfo"></p>
             </div>
             <div id="scroller3" class="mTSWrapper">
@@ -543,14 +581,14 @@
       carousel4();
       function carousel4() {
         var d;
-        var a = document.getElementsByClassName("dengue")
+        var a = document.getElementsByClassName("opencerts")
         for (d = 0; d < a.length; d++) {
           a[d].style.display = "none";
         }
         myIndex4++;
         if (myIndex4 > a.length) {myIndex4 = 1}
         a[myIndex4-1].style.display = "block";
-        setTimeout(carousel4, 4000);
+        setTimeout(carousel4, 6000);
       }
 
       var myIndex5 = 0 
@@ -565,6 +603,34 @@
         if (myIndex5 > b.length) {myIndex5 = 1}
         b[myIndex5-1].style.display = "block";
         setTimeout(carousel5, 5000);
+      }
+
+      var myIndex6 = 0 
+      carousel6();
+      function carousel6() {
+        var e;
+        var b = document.getElementsByClassName("MGP")
+        for (e = 0; e < b.length; e++) {
+          b[e].style.display = "none";
+        }
+        myIndex6++;
+        if (myIndex6 > b.length) {myIndex6 = 1}
+        b[myIndex6-1].style.display = "block";
+        setTimeout(carousel6, 6500);
+      }
+
+      var myIndex7 = 0 
+      carousel7();
+      function carousel7() {
+        var e;
+        var b = document.getElementsByClassName("codette")
+        for (e = 0; e < b.length; e++) {
+          b[e].style.display = "none";
+        }
+        myIndex7++;
+        if (myIndex7 > b.length) {myIndex7 = 1}
+        b[myIndex7-1].style.display = "block";
+        setTimeout(carousel7, 5000);
       }
 
     </script>

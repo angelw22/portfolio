@@ -154,7 +154,10 @@ CONTENTS:
 	/* thumbnail container (default: li) */
 	
 	.mTS_horizontal .mTSThumbContainer, 
-	.mTS_horizontal ul.mTSContainer > li{ float: left; }
+	.mTS_horizontal ul.mTSContainer > li{ 
+		float: left; 
+		padding: 0 40px;
+	}
 
 
 
